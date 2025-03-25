@@ -29,7 +29,7 @@ Se o período informado for `01/01/2025` a `31/12/2025`, apenas o contrato da Ma
 ## 🚀 Como Usar
 
 ```python
-from seu_script import processar_csv
+from script import processar_csv
 
 processar_csv(
     entrada='contratos.csv',
