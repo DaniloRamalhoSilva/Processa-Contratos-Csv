@@ -59,10 +59,3 @@ def processar_csv(entrada, saida, ini_periodo_str, fim_periodo_str):
     print(f"Registros filtrados: {total_filtrados}")
     print(f"Tempo de execução: {fim_execucao - inicio_execucao:.2f} segundos")
 
-if __name__ == "__main__":
-    if len(sys.argv) != 5:
-        print("Uso: python script.py <entrada.csv> <saida.csv> <data_inicial> <data_final>")
-        print("Exemplo: python script.py contratos.csv filtrados.csv 01/01/2025 31/12/2025")
-    else:
-        entrada, saida, data_ini, data_fim = sys.argv[1:5]
-        processar_csv(entrada, saida, data_ini, data_fim)
